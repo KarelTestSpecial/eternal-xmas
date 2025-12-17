@@ -10,7 +10,7 @@ const PORT = 3000;
 
 // Gebruik het snelle flash model
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash-image" });
 
 app.use(cors());
 app.use(express.json());
