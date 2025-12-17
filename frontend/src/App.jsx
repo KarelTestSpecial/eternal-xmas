@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Roep de backend aan
-    fetch('https://eternal-xmas.onrender.com')
+    fetch('https://eternal-xmas.onrender.com/visit')
       .then(res => res.json())
       .then(data => {
         setCardUrl(data.imageUrl)
